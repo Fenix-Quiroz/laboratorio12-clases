@@ -1,5 +1,7 @@
+export type TipoHabitacion  = "standard" | "suite"
 export interface Reserva {
-    tipoHabitacion: "standard" | "suite";
+ 
+  tipoHabitacion: TipoHabitacion;
     pax: number;
     noches: number;
   }
@@ -19,11 +21,6 @@ export const reservas: Reserva[] =[
       tipoHabitacion: "suite",
       pax: 2,
       noches: 1,
-  },
-  {
-    tipoHabitacion: "suite",
-    pax: 3,
-    noches: 2,
   },
 ];
   
